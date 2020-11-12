@@ -1,4 +1,4 @@
-<h2>Edit Post Form</h2>
+<h2>New Post Form</h2>
 <%= form_tag('/posts') do %>
   <% if @post.errors.any? %>
 	  <div id="error_explanation" %>
@@ -26,6 +26,5 @@
     <%= label_tag "content", "Content: " %><br><br>
     <%= text_area_tag "content", @post.content%>
   </div>
-  	<%= submit_tag "Update" %>
+  	<%= submit_tag "Save Post" %>
 <% end %>
-
